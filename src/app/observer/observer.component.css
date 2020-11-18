@@ -1,0 +1,17 @@
+.results {
+  margin-top: 10px;
+}
+
+.container {
+  padding: 10px;
+}
+
+.container.active {
+  border: solid 3px green;
+  border-radius: 5px;
+}
+
+.value {
+  color: green;
+  font-weight: bold;
+}

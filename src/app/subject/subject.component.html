@@ -1,0 +1,14 @@
+<div class="container">
+	<form (submit)="send()">
+		<input type="text" [value]="value" (input)="onInput($event)" />
+		<div>value that will be sent: <strong>{{ value }} </strong></div>
+		<button type="submit">Send</button>
+	</form>
+
+	<div class="observers">
+		<span>observers: {{ sub }}</span>
+
+		<button type="button" (click)="complete()" >complete</button>
+	</div>
+
+</div>

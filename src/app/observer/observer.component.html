@@ -1,0 +1,10 @@
+<div class="container" [class.active]="started">
+	<button  type="button" (click)="toggle()" >{{ started ? 'Stop' : 'Start' }}</button>
+	{{ started ? 'Observing' : 'Stoped' }}
+	<div class="results">
+		<div>Subject: <span class="value">{{ sValue }}</span> </div>
+		<div>AsyncSubject: <span class="value">{{ asValue }}</span></div>
+		<div>BehaviorSubject: <span class="value">{{ bsValue }}</span></div>
+		<div>ReplaySubject: <span *ngFor="let v of rsValue" class="value">{{ v }}-</span></div>
+	</div>
+</div>

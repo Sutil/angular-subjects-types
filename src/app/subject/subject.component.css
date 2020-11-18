@@ -1,0 +1,4 @@
+.observers {
+  display: flex;
+  flex-direction: column;
+}
